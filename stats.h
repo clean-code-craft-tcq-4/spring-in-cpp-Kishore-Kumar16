@@ -3,6 +3,7 @@
 #include <cmath>
 #include <math.h>
 #include <bits/stdc++.h>
+#include <numeric>
 
 using namespace std;
 
