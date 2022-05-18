@@ -18,7 +18,7 @@ TEST_CASE("average is NaN for empty array") {
     
     REQUIRE(std::isnan(computedStats.average) == 1);
     REQUIRE(std::isnan(computedStats.min) == 1);
-    REQUIRE(std::isnan(computedStats.max) =d= 1);
+    REQUIRE(std::isnan(computedStats.max) == 1);
     
 }
 
