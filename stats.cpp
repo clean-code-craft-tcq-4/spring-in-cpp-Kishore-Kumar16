@@ -3,6 +3,7 @@
 Stats Statistics::ComputeStatistics(const std::vector<double>& a) {
     //Implement statistics here
     Stats stat;
+    double sum = 0;
     
     if(a.empty())
     {
@@ -13,8 +14,11 @@ Stats Statistics::ComputeStatistics(const std::vector<double>& a) {
     stat.max = *max_element(a.begin(), a.end());
     
     //Calculate average
-    auto const count = static_cast<double>(a.size());
-    stat.average = reduce(a.begin(), a.end()) / count;
+    for(double num:a)
+    {
+        sum = sum + num;
+    }
+    stat.average = sum / a.size();
     
     return stat;
 }
