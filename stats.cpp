@@ -7,6 +7,10 @@ Stats Statistics::ComputeStatistics(const std::vector<double>& a) {
     
     if(a.empty())
     {
+        stat.average = nan("");
+        stat.min = nan("");
+        stat.max = nan("");
+        
         return stat;
     }
     
